@@ -1,0 +1,97 @@
+                MODULE: 5 (JQuery Basic, Effects & Advance)
+
+1. What is JQuery? 
+
+Ans. : jQuery is a fast, lightweight, and feature-rich JavaScript library that simplifies and enhances the process of manipulating HTML documents, handling events, animating elements, making AJAX requests, and creating interactive web applications. It provides a simplified syntax and a wide range of built-in functions and methods that make it easier to perform common tasks in web development.
+
+
+2. How to Apply CSS Using JQuery, How to Add Class and Remove Class in JQuery, 
+JQuery Animation? 
+
+
+Ans . : 
+
+To apply CSS using jQuery, you can use the css()
+
+$(selector).css(property, value);
+
+To add a class to an element using jQuery, you can use the addClass() method:
+
+$(selector).addClass(className);
+
+To remove a class from an element using jQuery, you can use the removeClass() method:
+
+$(selector).removeClass(className);
+
+removes it if it's already present. You can use the toggleClass() method:
+
+$(selector).toggleClass(className);
+
+
+3. How to create slider with animation?
+
+Ans :
+
+HTML Markup: Create the HTML structure for your slider. This typically involves a container element to hold the slider content and individual slide elements.
+
+example :
+
+<div class="slider">
+  <div class="slide">Slide 1</div>
+  <div class="slide">Slide 2</div>
+  <div class="slide">Slide 3</div>
+</div>
+
+
+CSS Styling: Apply CSS styles to the slider elements to define their positioning, dimensions, and appearance. You can customize the styles according to your design requirements.
+
+jQuery Code: Use jQuery to implement the slider functionality. 
+
+Here's an example of how to create a basic slider with animation:
+
+$(document).ready(function() {
+  // Initialize slider
+  var slider = $(".slider");
+  var slides = slider.find(".slide");
+  var slideCount = slides.length;
+  var currentIndex = 0;
+
+  // Function to show current slide
+  function showSlide(index) {
+    slides.eq(currentIndex).fadeOut();
+    slides.eq(index).fadeIn();
+    currentIndex = index;
+  }
+
+  // Automatically move to the next slide
+  function nextSlide() {
+    var newIndex = (currentIndex + 1) % slideCount;
+    showSlide(newIndex);
+  }
+
+  // Set interval for automatic slide transitions
+  var interval = setInterval(nextSlide, 3000);
+
+  // Pause interval on mouseover
+  slider.on("mouseenter", function() {
+    clearInterval(interval);
+  });
+
+  // Resume interval on mouseout
+  slider.on("mouseleave", function() {
+    interval = setInterval(nextSlide, 3000);
+  });
+});
+
+
+Remember to include the jQuery library in your HTML file by adding the following script tag before your custom JavaScript code: 
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+By customizing the CSS styles and adjusting the animation effects, you can create a visually appealing slider that fits your design requirements.
+
+
+
+
+
+
