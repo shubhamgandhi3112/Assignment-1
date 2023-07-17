@@ -1,0 +1,86 @@
+Website Designing HTML - 5
+
+1 . What are the new tags added in HTML5? 
+
+Ans . : 
+
+<header>: Represents the header section of a document or a section within it.
+<nav>: Defines a section of navigation links.
+<section>: Represents a standalone section within a document.
+<article>: Represents an independent, self-contained composition.
+<aside>: Defines content that is tangentially related to the main content.
+<footer>: Represents the footer section of a document or a section within it.
+<figure>: Represents self-contained content, such as images, diagrams, or code snippets.
+<figcaption>: Provides a caption or description for the content within a <figure> element.
+<video>: Embeds video content into a web page.
+<audio>: Embeds audio content into a web page.
+<canvas>: Provides a drawing area for graphics and animations.
+<progress>: Represents the progress of a task.
+<meter>: Defines a scalar measurement within a known range.
+<time>: Represents a specific period or a moment in time.
+<datalist>: Specifies a list of pre-defined options for input controls.
+<output>: Displays the result of a calculation or user action.
+<mark>: Highlights text as being marked or highlighted.
+<ruby>: Represents a ruby annotation for East Asian typography.
+<rt>: Represents the pronunciation of characters presented in a ruby annotation.
+<rp>: Provides fallback parentheses for browsers that do not support ruby annotations.
+
+
+
+2. How to embed audio and video in a webpage? 
+
+Ans : 
+
+
+Embedding Audio:
+
+Create an <audio> element with a source (src) attribute pointing to the audio file you want to embed.
+Add any optional attributes like controls, autoplay, loop, etc., as needed.
+
+
+Embedding Video:
+
+Create a <video> element with a source (src) attribute pointing to the video file you want to embed.
+Add any optional attributes like controls, autoplay, loop, width, height, etc., as needed
+
+
+3. Semantic element in HTML5? 
+
+Ans. 
+<header>: Represents the introductory or navigational content at the top of a webpage or a section.
+
+<nav>: Represents a section of the webpage that contains navigation links.
+
+<main>: Represents the main content of a webpage. There should be only one <main> element per page.
+
+<article>: Represents a self-contained, independent piece of content within a webpage, such as a blog post, a news article, or a forum post.
+
+<section>: Represents a thematic grouping of content within a webpage. It can be used to divide the content into different sections, such as chapters, tabs, or modules.
+
+<aside>: Represents content that is tangentially related to the main content, such as sidebars, pull quotes, or advertising.
+
+<footer>: Represents the footer of a webpage or a section. It typically contains information about the author, copyright information, related links, or contact details.
+
+<figure>: Represents self-contained content, such as images, illustrations, diagrams, code snippets, or videos, that is referenced within the main content of a webpage.
+
+<figcaption>: Represents the caption or description for a <figure> element.
+
+<time>: Represents a specific date, time, or duration. It can be used to mark up dates, times, or both, in a machine-readable format.
+
+
+4. Canvas and SVG tags
+
+
+
+Ans. : 
+
+canvas : The <canvas> element provides a drawing surface on which you can use JavaScript to draw graphics dynamically. It is a bitmap-based rendering solution, meaning that you work with pixels directly. The canvas element requires scripting to generate graphics and animations.
+
+
+svg : The <svg> element is used to embed scalable vector graphics directly in an HTML document. SVG is a markup language for describing two-dimensional vector graphics. Unlike the <canvas>, SVG images are resolution-independent and can be scaled up or down without losing quality. 
+
+
+
+
+
+
