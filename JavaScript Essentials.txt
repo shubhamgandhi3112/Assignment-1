@@ -1,0 +1,38 @@
+							
+
+								JavaScript Essentials
+
+
+
+1. Calculate subtotal price of quantity in JavaScript?
+
+Ans. : 
+
+example :
+
+var unitPrice = 2; 
+var quantity = 1;   
+
+
+var subtotal = unitPrice * quantity;
+
+
+console.log("Subtotal: $" + subtotal);
+
+In this example, we have a unit price of $2 and a quantity of 1, so the subtotal will be $3. You can replace the unitPrice and quantity variables with your own values to calculate the subtotal for your specific situation.
+
+2.  What is JavaScript Output method?
+
+Ans. : 
+
+console.log(): This method is used for debugging and development purposes. It logs messages or values to the browser's console, which is typically accessible through the browser's developer tools. It's not used for displaying content to end-users in a web page.
+
+3. • How to used JavaScript Output method?
+
+Ans . : Using JavaScript output methods depends on your specific use case and where you want to display the output.
+
+4. • How to used JavaScript Events to do all examples?
+
+Ans : JavaScript events can be used to trigger actions or functions in response to user interactions or other events in a web page. To demonstrate the previous examples using JavaScript events, we'll use event handlers to execute code when events occur.
+
+
